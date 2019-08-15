@@ -46,9 +46,9 @@ public class Program
 ```
 As is, running ```dotnet run``` will deliver a "Hello World!" message at localhost:5000.
 
-#Error Feedback
+# Error Feedback
 
-Another tool available to us, particularly for when we don't know where exactly our app is failing. To receive more explicit error messages about the state of our app, we just need to make sure our work environment is set to **Development mode**. Notice in the Configure method of our Startup file the following condition:
+Another tool available to us, particularly for when we don't know where exactly our app is failing. To receive more explicit error messages about the state of our app, we just need to make sure our work environment is set to **Development mode**. Notice in the Configure method of our **Startup file (Startup.cs)** the following condition:
 ```javascript
 
     if (env.IsDevelopment())
@@ -61,6 +61,7 @@ Production mode, which is the version of our project we want our end users to se
 
 To put our current work environment into Development mode, we need to change an environment variable for .NET.
 
+Enter into the terminal:
 ```javascript
     export ASPNETCORE_ENVIRONMENT=Development
 ```
